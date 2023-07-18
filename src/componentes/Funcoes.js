@@ -37,7 +37,7 @@ export function consomeApi(qtdNumeros, numMin, numMax, setNumerosAleatorios) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Ocorreu um erro ao obter os números sorteados. Tente novamente mais tarde.'
+        text: 'Ocorreu um erro ao obter os números sorteados. Verifique sua conexão e tente novamente mais tarde.'
       })
     });
 }
