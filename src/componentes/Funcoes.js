@@ -1,5 +1,12 @@
 //#region Função para sortear números chamada em todas as telas, só alterando os parâmetros
 export function consomeApi(qtdNumeros, numMin, numMax, setNumerosAleatorios) {
+  Swal.fire({
+    title: 'Sorteando...',
+    didOpen: () => {
+      Swal.showLoading()
+    }
+  })
+  
   fetch(`https://api-sorteador-de-numeros.vercel.app/api?qtdNumeros=${qtdNumeros}&numMin=${numMin}&numMax=${numMax}`, {
     method: 'Get',
     headers: {
@@ -9,6 +16,7 @@ export function consomeApi(qtdNumeros, numMin, numMax, setNumerosAleatorios) {
   })
     .then(resposta => resposta.json())
     .then(dados => {
+      Swal.close();
       if (dados.resultado !== undefined) {
         setNumerosAleatorios('Números sorteados: ' + dados.resultado);
       } else {
