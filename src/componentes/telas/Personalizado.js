@@ -42,12 +42,15 @@ export default function PaginaInicial() {
 
       <main>
         <div>
-          <label>Quantos números você quer sortear (máximo: 1000)?</label>
+          <label>Quantos números (máx. 1000)?</label>
           <input type='number' value={inputQtdNumeros} onChange={handleInputQtdNumeros} min='1' max='1000' step='1' />
         </div>
 
         <div>
           <label>Qual é o intervalo?</label>
+        </div>
+    
+        <div>
           <label>De:</label>
           <input type='number' value={inputNumMin} onChange={handleInputNumMin} step='1' />
           <label>Até:</label>
