@@ -45,6 +45,7 @@ input {
 select {
   width: 60px;
   padding: 5px;
+  margin-left: 10px;
 }
 
 .area-botao {
@@ -59,7 +60,7 @@ button, a {
   width: 200px;
   color: white;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: bolder;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
