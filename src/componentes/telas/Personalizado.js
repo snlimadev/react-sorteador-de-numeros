@@ -43,6 +43,9 @@ export default function PaginaInicial() {
       <main>
         <div>
           <label>Quantos números (máx. 1000)?</label>
+        </div>
+    
+        <div>
           <input type='number' value={inputQtdNumeros} onChange={handleInputQtdNumeros} min='1' max='1000' step='1' />
         </div>
 
