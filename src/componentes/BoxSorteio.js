@@ -6,7 +6,7 @@ export default function BoxSorteio(props) {
     <div>
       <div className='area-botao'>
         <button onClick={props.botaoSortear} style={{ backgroundColor: 'green' }}>
-          Clique aqui para sortear
+          Sortear
         </button>
       </div>
 
