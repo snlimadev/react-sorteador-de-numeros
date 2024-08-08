@@ -82,8 +82,20 @@ p span {
   font-weight: bold;
 }
 
+.container-tela-inicial,
+.container-tela-inicial div,
+.container-tela-inicial a {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   .conteudo-centralizado {
     width: 60%;
+  }
+
+  .container-tela-inicial,
+  .container-tela-inicial div,
+  .container-tela-inicial a {
+    width: 85%;
   }
 }

@@ -10,7 +10,7 @@ export default function PaginaInicial() {
     <div className='conteudo-centralizado'>
       <Header titulo='Escolha o tipo de sorteio' />
 
-      <main>
+      <main className='container-tela-inicial'>
         <div className='area-botao'>
           <Link to='/personalizado'>Personalizado</Link>
         </div>

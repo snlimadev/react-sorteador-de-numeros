@@ -33,7 +33,15 @@ export default function PaginaInicial() {
     const numMin = inputNumMin;
     const numMax = inputNumMax;
 
-    consomeApi(qtdNumeros, numMin, numMax, setResultado);
+    if (qtdNumeros && numMin && numMax) {
+      consomeApi(qtdNumeros, numMin, numMax, setResultado);
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'É obrigatório informar a quantidade de números e o intervalo!'
+      });
+    }
   }
 
   return (
